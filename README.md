@@ -1,2 +1,1 @@
-# -lk-Dosya
-Deneme
+SS
