@@ -1,0 +1,2 @@
+# -lk-Dosya
+Deneme
