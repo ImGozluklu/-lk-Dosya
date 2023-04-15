@@ -1,14 +1,4 @@
-/*
-    Yunus Emre Maral 210106109010   
-    
-    Hocam kodun bir kısmını kendim yazdım bir kısmınıda internetten yardım aldım
-	cok zorlandıgım yerlerde şimdiden degerlendirmeniz için teşekkürler.
-	 
-	Ben kendim tek tek denedigimde bir sıkıntı yaratmadı ve çözdü denklemleri lütfen
-	yönlendirmeleri dikkatli okuyun gauss jordanda b matrisinide a matrisine birleşik alıyorum 
-	tekrardan teşekkür ederim.
-    
-*/
+
 #include <iostream>
 #include<iostream>
 #include<iomanip>
@@ -154,11 +144,11 @@ int main(){
 		float a[SIZE][SIZE], x[SIZE], ratio;
 	 int i,j,k,n;
 
-     /* Sabit nokta gösteriminde kesinlik ayarlama ve kayan nokta değerleri yazma */
+     /* Sabit nokta gÃ¶steriminde kesinlik ayarlama ve kayan nokta deÃ°erleri yazma */
      cout<< setprecision(3)<< fixed;
 
 	 /* Girdiler */
-	 /* nxn matristeki n degeri yani boyut alınır */
+	 /* nxn matristeki n degeri yani boyut alÃ½nÃ½r */
 	 cout<<"NxN matristeki n degerini giriniz: ";
 	 cin>>n;
 
@@ -173,12 +163,12 @@ int main(){
 			   cin>>a[i][j];
 		  }
 	 }
-    /* Gauss Jordan Uygulanması */
+    /* Gauss Jordan UygulanmasÃ½ */
      for(i=1;i<=n;i++)
      {
           if(a[i][i] == 0.0)
           {
-               cout<<"Matematiksel hata! Köşegen 0 olamaz!";
+               cout<<"Matematiksel hata! KÃ¶Ã¾egen 0 olamaz!";
                exit(0);
           }
           for(j=1;j<=n;j++)
@@ -199,7 +189,7 @@ int main(){
         x[i] = a[i][n+1]/a[i][i];
      }
 
-	 /* Çözüm gösteriliyor */
+	 /* Ã‡Ã¶zÃ¼m gÃ¶steriliyor */
 	 cout<< endl<<"Cozum: "<< endl;
 	 for(i=1;i<=n;i++)
 	 {
@@ -228,7 +218,7 @@ int main(){
     cout<<"Sonuc Matrisini Giriniz"<<endl;
     for(i=1;i<=n;i++)
         cin>>b[i];
-    //********** LU ayrıstırma *****//
+    //********** LU ayrÃ½stÃ½rma *****//
     for(k=1;k<=n;k++)
     {
         u[k][k]=1;
