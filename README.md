@@ -1,1 +1,1 @@
-SS
+Matris Determinant Bulma Yöntemleri
